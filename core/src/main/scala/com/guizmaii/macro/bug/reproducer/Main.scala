@@ -1,9 +1,9 @@
 package com.guizmaii.`macro`.bug.reproducer
 
-import com.guizmaii.`macro`.bug.reproducer.macros.CompileTimeEnv
+import com.guizmaii.`macro`.bug.reproducer.macros.{CompileTimeEnv, CompileTimeEnvMacro}
 
 class Main extends App {
 
-  assert(CompileTimeEnv.compileEnv.isInstanceOf[CompileTimeEnv.Staging], "CompileTime env is not staging")
+  assert(CompileTimeEnvMacro.compileEnv.isInstanceOf[CompileTimeEnv.Staging], "CompileTime env is not staging")
 
 }
